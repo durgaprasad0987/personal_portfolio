@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet' />
+  <title>Portfolio website complete</title>
+
+  <style>
+    .about__img {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .about__img img {
+      width: 250px;
+      height: auto;
+      border-radius: 20px;
+      transition: transform 0.3s ease-in-out;
+      object-fit: cover;
+    }
+
+    .about__img img:hover {
+      transform: scale(1.05);
+    }
+
+    .home__blob {
+      width: 300px;
+      height: 300px;
+    }
+
+    .home__blob-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .home__img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    body {
+      background-color: aqua;
+    }
+
+    /* Divider style */
+    .section-divider{
+      border: none;
+      height: 3px;
+      background-color: rgb(7, 7, 7);
+      margin: 40px 0;
+    }
+  </style>
+</head>
+<body>
+  <!--===== HEADER =====-->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div><a href="#" class="nav__logo">VAMSI KRISHNA REDDY</a></div>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class='bx bx-menu'></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="l-main">
+    <!--===== HOME =====-->
+    <section class="home bd-grid" id="home">
+      <div class="home__data">
+        <h1 class="home__title">
+          DIRECTOR<br />
+          <span class="home__title-color">VAMSI KRISHNA <br />REDDY </span>
+        </h1><br /><br />
+        <a href="#" class=></a>
+      </div>
+
+      <div class="home__social">
+        <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+        <a href="" class="home__social-icon"><i class='bx bxl-behance'></i></a>
+        <a href="" class="home__social-icon"><i class='bx bxl-github'></i></a>
+      </div>
+
+      <div class="home__img">
+        <img class="home__blob-img" src="https://files.catbox.moe/sc22xi.jpg" alt="Profile" />
+      </div>
+    </section>
+    <hr class="section-divider" />
+
+    <!--===== ABOUT =====-->
+    <section class="about section" id="about">
+      <h2 class="section-title">About</h2>
+      <div class="about__container bd-grid">
+        <div class="about__img">
+          <img src="https://files.catbox.moe/sc22xi.jpg" alt="Profile" />
+          <p>
+            We believe that true learning happens when education meets opportunity. Through collaborations with industry leaders, internships, and interactive workshops, we bridge the gap between classroom knowledge and professional expertise. At LITAM, our goal is to nurture well-rounded professionals who are not just equipped for the job market but are also prepared to lead and innovate in their chosen fields.
+          </p>
+        </div>
+      </div>
+    </section>
+    <hr class="section-divider" />
+
+    <!--===== SKILLS =====-->
+    <section class="skills section" id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills__container bd-grid">
+        <div>
+          <h2 class="skills__subtitle">Professional Skills</h2>
+          <p class="skills__text">At LITAM we are committed to delivering an education that goes beyond traditional learning. Our teaching & learning methodologies are designed with a focus on industry needs...</p>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-html5 skills__icon'></i>
+              <span class="skills__name">Assistant professor</span>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-css3 skills__icon'></i>
+              <span class="skills__name">Professor</span>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-javascript skills__icon'></i>
+              <span class="skills__name">M.B.A</span>
+            </div>
+            <div class="skills__bar skills__js"></div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxs-paint skills__icon'></i>
+              <span class="skills__name">M.Tech</span>
+            </div>
+            <div class="skills__bar skills__ux"></div>
+          </div>
+        </div>
+        <div>
+          <img src="https://ibb.co/qMGMrBrk" alt="" class="skills__img">
+        </div>
+      </div>
+    </section>
+    <hr class="section-divider" />
+
+    <!--===== WORK =====-->
+    <section class="work section" id="work">
+      <h2 class="section-title">Work</h2>
+      <div class="work__container bd-grid">
+        <div class="work__img">
+          <img src="https://ibb.co/YS4KyVW" alt="Project 1">
+          <p>Project 1: Assistant professor is an academic rank just below the rank of an associate professor used in universities or colleges, mainly in the United States, Canada, Japan, and South</p>
+        </div>
+        <div class="work__img">
+          <img src="https://via.placeholder.com/300x200" alt="Project 2">
+          <p>Project 2:person who affirms a faith in or allegiance to something. </p>
+        </div>
+        <div class="work__img">
+          <img src="https://via.placeholder.com/300x200" alt="Project 3">
+          <p>Project 3:An MBA (Master of Business Administration) focuses on broader business management principles and leadership, while an M.Tech (Master of Technology) is a specialized technical degree in a particular engineering discipline. Both are postgraduate degrees, typically requiring two years of study, and can lead to successful careers. 
+            MBA 
+            
+             </p>
+        </div>
+      </div>
+    </section>
+    <hr class="section-divider" />
+
+    <!--===== CONTACT =====-->
+    <section class="contact section" id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact__container bd-grid">
+        <form action="https://formspree.io/f/xrbpvkjg" method="POST" class="contact__form">
+          <input type="text" name="name" placeholder="Name" class="contact__input" required>
+          <input type="email" name="email" placeholder="Email" class="contact__input" required>
+          <textarea name="message" placeholder="Your Message" cols="0" rows="10" class="contact__input" required></textarea>
+          <button type="submit" class="contact__button button">Send</button>
+        </form>
+      </div>
+    </section>
+    <hr class="section-divider" />
+  </main>
+
+  <!--===== FOOTER =====-->
+  <footer class="footer">
+    <p class="footer__title"></p>
+    <div class="footer__social">
+      <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+      <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+      <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+    </div>
+    <p class="footer__copy">&#169; LITAM. All rights reserved</p>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html
